@@ -9,6 +9,6 @@ meta:
   title: " | Ninneko"
 links:
 - text: Home
-  link: https://ninneko.com
+  link: https://ninneko.com 
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
