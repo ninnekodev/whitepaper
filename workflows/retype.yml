@@ -18,5 +18,6 @@ jobs:
 
       - uses: retypeapp/action-github-pages@v1
         with:
+          branch: retype
           update-branch: true
           directory: whitepaper
