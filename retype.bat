@@ -1,0 +1,1 @@
+node_modules\retypeapp\platforms\win-x64\retype.exe watch
