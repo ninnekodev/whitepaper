@@ -28,11 +28,10 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/whitepaper/static/coin_nino.svg" rel="icon" />
-    <link href="/whitepaper/resources/css/retype.css?v=1.11.2.695923683861" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/whitepaper/resources/css/retype.css?v=1.10.696330240339" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.11.2.695923683861" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/whitepaper/resources/js/lunr.js?v=1.11.2.695923683861" defer></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.10.696330240339" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -75,7 +74,7 @@
                     </div>
 
                     <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
-                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search" />
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
                 </div>
 
                 <!-- Mobile search button mock -->
@@ -122,10 +121,9 @@
         <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
     </div>
 
-
     <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
         <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -154,9 +152,8 @@
                 </nav>
             </div>
 
-
             <a
-    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by"
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
     target="_blank"
     href="https://retype.com/"
     rel="noopener"
@@ -199,6 +196,8 @@
     </h3>
 </doc-anchor-target>
 <p>You can randomly select two Ninneko to pair up with. Remember to understand the breeding mechanics before breeding a specific Ninneko.</p>
+<p>Ninnekos have a single class, which is the one from either parent. Thus, it has a 50% chance of inheriting one type or the other. Offspring can’t be born with classes different from its parents’, making class mutations impossible.</p>
+<p>If the parents are of the same class, their offspring will also be born with that class.</p>
 <p><figure class="content-center">
     <img src="/whitepaper/static/breed.jpg" alt="" />
     <figcaption class="caption"></figcaption>
@@ -222,7 +221,6 @@
     </div>
 </div>
 <p>The probabilities in genetics:</p>
-<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -245,7 +243,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <p>By breaking down a Ninneko’s genetic code, it’s possible to predict the probabilities when breeding 2 Ninneko.</p>
 <div class="flex mb-6">
     <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -281,7 +278,6 @@ When a baby Ninneko doesn’t possess traits that can be seen in either its pare
 <p>Each Ninneko can be bred a maximum of 6 times. Breeding a Ninneko costs <span class="no-link inline-flex items-center justify-center font-medium leading-none whitespace-nowrap text-blue-500 dark:text-blue-400 border border-blue-500 dark:border-blue-400 h-6 px-2 text-xs rounded-md">
     <span>350 NINO</span>
 </span> and some MATA, depending on how many times the Ninneko have been bred.</p>
-<div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
@@ -316,7 +312,6 @@ When a baby Ninneko doesn’t possess traits that can be seen in either its pare
 </tr>
 </tbody>
 </table>
-</div>
 <doc-anchor-target id="for-example">
     <h4>
         <doc-anchor-trigger class="header-anchor-trigger" to="#for-example">#</doc-anchor-trigger>
