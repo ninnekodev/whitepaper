@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="turbo-root" content="/whitepaper">
+    <meta name="turbo-cache-control" content="no-cache">
+
+    <!-- Primary Meta Tags -->
+    <title>Skills | Ninneko</title>
+    <meta name="title" content="Skills | Ninneko">
+    <meta name="description" content="Weapon (hand), Tail, Eyes, Hair determine which Skill a Ninneko can use in battle" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninnekodev.github.io/whitepaper/gameplay/battling/skills/">
+    <meta property="og:title" content="Skills | Ninneko">
+    <meta property="og:description" content="Weapon (hand), Tail, Eyes, Hair determine which Skill a Ninneko can use in battle">
+    <meta property="og:image" content="https://ninnekodev.github.io/whitepaper/whitepaper/static/skills/skill_2.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ninnekodev.github.io/whitepaper/gameplay/battling/skills/">
+    <meta property="twitter:title" content="Skills | Ninneko">
+    <meta property="twitter:description" content="Weapon (hand), Tail, Eyes, Hair determine which Skill a Ninneko can use in battle">
+    <meta property="twitter:image" content="https://ninnekodev.github.io/whitepaper/whitepaper/static/skills/skill_2.png">
+    
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+
+    <link href="/whitepaper/static/coin_nino.svg" rel="icon" />
+    <link href="/whitepaper/resources/css/retype.css?v=1.10.696493008578" rel="stylesheet" data-turbo-track="reload" />
+
+    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.10.696493008578" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
+</head>
+    <body>
+        <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+    <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+
+    <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+    <div class="container relative flex items-center justify-between flex-grow pr-6 md:justify-start">
+        <!-- Mobile menu button skeleton -->
+        <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center flex-shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+        <div v-cloak id="docs-sidebar-toggle"></div>
+
+        <!-- Logo -->
+        <div class="flex items-center justify-between h-full py-2 md:w-75">
+            <div class="flex items-center px-2 md:px-6">
+                <a id="docs-site-logo" href="/whitepaper/" class="flex items-center leading-snug text-2xl">
+                    <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Ninneko</span>
+                </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Whitepaper</span>
+            </div>
+
+            <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+        </div>
+
+        <div class="flex justify-between md:flex-grow">
+            <!-- Top Nav -->
+            <nav class="hidden md:flex">
+    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+        <li class="md:mr-6">
+            <a class="block py-2 text-sm text-gray-400 whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 md:mb-0" href="https://ninneko.com">Home</a>
+        </li>
+    </ul>
+</nav>
+
+            <!-- Header Right Skeleton -->
+            <div v-cloak class="flex justify-end flex-grow skeleton">
+
+                <!-- Search input mock -->
+                <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                    <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                    </div>
+
+                    <input class="w-full h-10 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 placeholder-gray-400 dark:placeholder-dark-400"
+                    style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs" />
+                </div>
+
+                <!-- Mobile search button mock -->
+                <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                </div>
+
+                <!-- Dark mode switch placehokder -->
+                <div class="w-10 h-10 lg:ml-2"></div>
+
+                <!-- History button mock -->
+                <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation"  style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                </div>
+            </div>
+
+            <div v-cloak class="flex items-center justify-end flex-grow">
+                <div id="docs-mobile-search-button"></div>
+                <doc-search-desktop></doc-search-desktop>
+
+                <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                <doc-history></doc-history>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <div class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+<div v-cloak class="fixed flex flex-col flex-shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+
+    <!-- Render this div, if config.showSidebarFilter is `true` -->
+    <div class="flex items-center h-16 px-6">
+        <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter" />
+    </div>
+
+    <div class="pl-6 mb-4 mt-1">
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+        <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+    </div>
+
+    <div class="flex-shrink-0 mt-auto bg-transparent dark:border-dark-650">
+        <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+    </div>
+</div>
+
+<!-- Sidebar component -->
+<doc-sidebar v-cloak>
+    <template #sidebar-footer>
+        <div
+            class="flex-shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650"
+        >
+
+            <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                <nav>
+                    <ul class="flex flex-wrap justify-center items-center">
+                        <li class="mr-6">
+                            <a class="block py-1 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://ninneko.com">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a
+    class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in"
+    target="_blank"
+    href="https://retype.com/"
+    rel="noopener"
+>
+    <span class="text-xs whitespace-nowrap">Powered by</span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+</a>
+
+        </div>
+    </template>
+</doc-sidebar>
+
+
+        <div class="flex-grow min-w-0 dark:bg-dark-850">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+            <div class="flex">
+    <div class="flex-grow min-w-0 px-6 md:px-16">
+        <main class="relative pt-6 pb-16">
+            <div class="docs-markdown" id="docs-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="docs-sidebar-right-toggle"></div>
+               
+                <!-- Page content  -->
+<doc-anchor-target id="skills" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#skills">#</doc-anchor-trigger>
+        <span>Skills</span>
+    </h1>
+</doc-anchor-target>
+<hr />
+<p>Weapon (hand), Tail, Eyes, Hair determine which Skill a Ninneko can use in battle</p>
+<table class="comfortable">
+<thead>
+<tr>
+<th>Image</th>
+<th>Name</th>
+<th>Part</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_2.png" alt="" /></td>
+<td>Roundish</td>
+<td>Eye</td>
+<td>At round 6, increase 50% attack in 5 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_8.png" alt="" /></td>
+<td>Squinting</td>
+<td>Eye</td>
+<td>At round 4, increase 30% attack in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_14.png" alt="" /></td>
+<td>Doctor</td>
+<td>Eye</td>
+<td>When someone uses active skill, increase 5 energy .</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_20.png" alt="" /></td>
+<td>Flirt</td>
+<td>Eye</td>
+<td>When enemies dies, increase 15% critical in 3 round, increase 15% critical damage in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_26.png" alt="" /></td>
+<td>Cyclopes</td>
+<td>Eye</td>
+<td>When enemies dies, increase 15% attack in 5 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_32.png" alt="" /></td>
+<td>Starry</td>
+<td>Eye</td>
+<td>When allie dies, increase 10 energy .</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_38.png" alt="" /></td>
+<td>Piggy</td>
+<td>Eye</td>
+<td>When allie dies, increase 10% armor penetration in 5 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_44.png" alt="" /></td>
+<td>Sunken</td>
+<td>Eye</td>
+<td>When hp &lt; 80%, increase 20% armor in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_50.png" alt="" /></td>
+<td>Bug</td>
+<td>Eye</td>
+<td>When hp &lt; 80%, increase 10% armor penetration in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_56.png" alt="" /></td>
+<td>Scouter</td>
+<td>Eye</td>
+<td>When hp &lt; 50%, increase 20% attack in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_62.png" alt="" /></td>
+<td>Shutter</td>
+<td>Eye</td>
+<td>When hp &lt; 50%, heal [ 5% max health ] in 5 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_93.png" alt="" /></td>
+<td>Paint</td>
+<td>Eye</td>
+<td>When hp &lt; 30%, increase healing efficiency 50% hiệu ứng hồi hp in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_189.png" alt="" /></td>
+<td>Owl</td>
+<td>Eye</td>
+<td>When hp &lt; 30%, increase 30% critical in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_190.png" alt="" /></td>
+<td>Monocle</td>
+<td>Eye</td>
+<td>When you die, revive with [ 50% max health ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_191.png" alt="" /></td>
+<td>Mask</td>
+<td>Eye</td>
+<td>When you die, stun enemy in 2 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_192.png" alt="" /></td>
+<td>Scouter</td>
+<td>Eye</td>
+<td>When you die, deal damage [ 200% attack ] to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_193.png" alt="" /></td>
+<td>Dollars</td>
+<td>Eye</td>
+<td>When battle starts, energy shield [ 20% max health of teammate ] in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_194.png" alt="" /></td>
+<td>Blind</td>
+<td>Eye</td>
+<td>When battle starts, increase 10% armor in 2 round to 1 allies in the same line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_195.png" alt="" /></td>
+<td>Red</td>
+<td>Eye</td>
+<td>When battle starts, stun enemy in 1 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_196.png" alt="" /></td>
+<td>Crying</td>
+<td>Eye</td>
+<td>Reduce damage from debuff 15% damage from burning, poison, bleeding.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_197.png" alt="" /></td>
+<td>Love</td>
+<td>Eye</td>
+<td>Reduce 15% critical damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_198.png" alt="" /></td>
+<td>Scar</td>
+<td>Eye</td>
+<td>Increase damage [ 30% attack to petrified enemies ] to enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_199.png" alt="" /></td>
+<td>Phoenix</td>
+<td>Eye</td>
+<td>Increase damage [ 30% attack to freezy enemies ] to enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_200.png" alt="" /></td>
+<td>Tiger</td>
+<td>Eye</td>
+<td>Increase damage [ 30% attack to stuned enemies ] to enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_201.png" alt="" /></td>
+<td>Crayon</td>
+<td>Eye</td>
+<td>When allies use active skill, increase 10% true damage in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_202.png" alt="" /></td>
+<td>Player</td>
+<td>Eye</td>
+<td>When allies use active skill, increase 10 energy .</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_203.png" alt="" /></td>
+<td>Eagle</td>
+<td>Eye</td>
+<td>When allies use active skill, heal [ 10% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_204.png" alt="" /></td>
+<td>Fox</td>
+<td>Eye</td>
+<td>At the beginning of round, increase [ 5% attack with each enemy hard controlled ] in 1 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_205.png" alt="" /></td>
+<td>Zorro</td>
+<td>Eye</td>
+<td>At the beginning of round, increase 10 energy to 1 allies in the same line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_206.png" alt="" /></td>
+<td>Yellow</td>
+<td>Eye</td>
+<td>At the end of each round, heal for % lost hp 15% hp mất.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_207.png" alt="" /></td>
+<td>Flash</td>
+<td>Eye</td>
+<td>At the end of round, increase [ 5% attack with each enemy hard controlled ] in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_4.png" alt="" /></td>
+<td>Spiky</td>
+<td>Hair</td>
+<td>When use basic attack , increase 10% armor in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_10.png" alt="" /></td>
+<td>Highlight</td>
+<td>Hair</td>
+<td>When use basic attack , increase 10% attack in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_16.png" alt="" /></td>
+<td>Long</td>
+<td>Hair</td>
+<td>When use basic attack , increase 10 speed in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_22.png" alt="" /></td>
+<td>Dumb</td>
+<td>Hair</td>
+<td>When use basic attack , heal [ 35% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_28.png" alt="" /></td>
+<td>Shorty</td>
+<td>Hair</td>
+<td>When use basic attack , healing efficiency reduce 10% hiệu ứng hồi hp in 2 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_34.png" alt="" /></td>
+<td>Bouffant</td>
+<td>Hair</td>
+<td>When use basic attack , deal damage [ 20% attack ] to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_40.png" alt="" /></td>
+<td>Bun</td>
+<td>Hair</td>
+<td>When use basic attack , burn [ 50% attack ] in 1 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_46.png" alt="" /></td>
+<td>Pointy</td>
+<td>Hair</td>
+<td>When use basic attack , poison [ 25% attack ] in 3 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_52.png" alt="" /></td>
+<td>Sushi</td>
+<td>Hair</td>
+<td>When use basic attack , bleed enemy [ 25% attack ] in 2 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_58.png" alt="" /></td>
+<td>Bird</td>
+<td>Hair</td>
+<td>When use basic attack , deal damage [ 80% attack ] to 1 enemy with highest energy.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_64.png" alt="" /></td>
+<td>Dragon</td>
+<td>Hair</td>
+<td>When use basic attack , deal damage [ 80% attack ] to 1 enemy with highest attack.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_75.png" alt="" /></td>
+<td>Pirate</td>
+<td>Hair</td>
+<td>When taking damage, deal damage [ 50% attack ] to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_79.png" alt="" /></td>
+<td>Robin</td>
+<td>Hair</td>
+<td>When taking damage, deal damage [ 100% attack nếu giáp bản thân cao hơn ] to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_95.png" alt="" /></td>
+<td>Goat</td>
+<td>Hair</td>
+<td>When taking damage, heal [ 12% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_156.png" alt="" /></td>
+<td>Wukong</td>
+<td>Hair</td>
+<td>When taking damage, reduce 15% armor penetration in 2 round to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_157.png" alt="" /></td>
+<td>Santa</td>
+<td>Hair</td>
+<td>When taking damage, reduce 18% damage skill in 2 round to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_158.png" alt="" /></td>
+<td>Purple</td>
+<td>Hair</td>
+<td>When taking damage, reduce 15% critical in 2 round to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_159.png" alt="" /></td>
+<td>Wavy</td>
+<td>Hair</td>
+<td>When taking damage, reduce 5 speed in 2 round to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_160.png" alt="" /></td>
+<td>Hippie</td>
+<td>Hair</td>
+<td>When taking damage, reduce 5 energy to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_161.png" alt="" /></td>
+<td>Samurai</td>
+<td>Hair</td>
+<td>When taking damage, reduce 5% accuracy in 2 round to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_162.png" alt="" /></td>
+<td>Nurse</td>
+<td>Hair</td>
+<td>Whenever suffers a critical strike, increase 10 energy .</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_163.png" alt="" /></td>
+<td>Guan Yu</td>
+<td>Hair</td>
+<td>Whenever suffers a critical strike, heal [ 12% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_164.png" alt="" /></td>
+<td>Party</td>
+<td>Hair</td>
+<td>Whenever suffers a critical strike, reduce 30% critical to attacker.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_165.png" alt="" /></td>
+<td>Angel</td>
+<td>Hair</td>
+<td>When your attack is blocked, increase 15% armor penetration in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_166.png" alt="" /></td>
+<td>Cake</td>
+<td>Hair</td>
+<td>When your attack is blocked, increase 20% accuracy in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_167.png" alt="" /></td>
+<td>Snorkel</td>
+<td>Hair</td>
+<td>When your attack is blocked, increase 10% true damage in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_168.png" alt="" /></td>
+<td>Chef</td>
+<td>Hair</td>
+<td>When blocking an attack, increase 10% attack in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_169.png" alt="" /></td>
+<td>Conical</td>
+<td>Hair</td>
+<td>When blocking an attack, increase 10 energy .</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_170.png" alt="" /></td>
+<td>Hopter</td>
+<td>Hair</td>
+<td>When blocking an attack, heal based on % incoming damage 35% damage received.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_171.png" alt="" /></td>
+<td>Nest</td>
+<td>Hair</td>
+<td>When critical strike, increase 50% critical damage in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_172.png" alt="" /></td>
+<td>Burger</td>
+<td>Hair</td>
+<td>When critical strike, increase 20% true damage in 2 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_173.png" alt="" /></td>
+<td>Helmet</td>
+<td>Hair</td>
+<td>When critical strike, heal [ 30% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_6.png" alt="" /></td>
+<td>Shuriken</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ] to the closest enemies. Increase 20% critical in 3 round, 20% critical damage in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_12.png" alt="" /></td>
+<td>Kunai</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 30% block in 3 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_18.png" alt="" /></td>
+<td>Angel</td>
+<td>Hand</td>
+<td>Deal damage [ 100% attack ], silence enemy in 1 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_24.png" alt="" /></td>
+<td>Watermelon</td>
+<td>Hand</td>
+<td>Deal damage [ 180% attack ] to nearest vertical enemies. Increase 20 energy to 1 allies in the same line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_30.png" alt="" /></td>
+<td>Matchet</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Heal [ 70% attack ] to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_36.png" alt="" /></td>
+<td>Windmill</td>
+<td>Hand</td>
+<td>Deal damage [ 198% attack ] to 1 enemies with least hp.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_42.png" alt="" /></td>
+<td>Balde</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 20% accuracy in 3 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_48.png" alt="" /></td>
+<td>Twin</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ] to 2 enemy with highest attack.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_54.png" alt="" /></td>
+<td>Sushi</td>
+<td>Hand</td>
+<td>Deal damage [ 50% attack ], bleed enemy [ 65% attack ] in 2 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_60.png" alt="" /></td>
+<td>Axe</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ] to 2 enemies with least hp.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_66.png" alt="" /></td>
+<td>Chicken</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ] to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_67.png" alt="" /></td>
+<td>Pan</td>
+<td>Hand</td>
+<td>Deal damage [ 300% attack ] to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_68.png" alt="" /></td>
+<td>Anchor</td>
+<td>Hand</td>
+<td>Deal damage [ 120% attack ], reduce 20% armor penetration in 3 round to enemies in the back line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_69.png" alt="" /></td>
+<td>Brick</td>
+<td>Hand</td>
+<td>Deal damage [ 220% attack ] to nearest vertical enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_70.png" alt="" /></td>
+<td>Cup</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], reduce 30% attack in 3 round to 1 enemy with highest attack.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_71.png" alt="" /></td>
+<td>TNT</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ] to the closest enemies. Increase 34% armor penetration in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_72.png" alt="" /></td>
+<td>Rugby Ball</td>
+<td>Hand</td>
+<td>Deal damage [ 180% attack ], reduce 20 energy to nearest vertical enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_73.png" alt="" /></td>
+<td>Boomerang</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ], cripple enemy (crippled enemy can not use basic attack) in 2 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_74.png" alt="" /></td>
+<td>Triangle</td>
+<td>Hand</td>
+<td>Deal damage [ 50% attack ], burn [ 100% attack ] in 1 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_76.png" alt="" /></td>
+<td>Gun</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Increase 20% block in 3 round to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_77.png" alt="" /></td>
+<td>AK47</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Increase 10% armor in 3 round to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_78.png" alt="" /></td>
+<td>Riffle</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Increase 20% accuracy in 3 round to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_80.png" alt="" /></td>
+<td>Bow</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], petrify enemy in 1 round to nearest vertical enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_81.png" alt="" /></td>
+<td>Pump</td>
+<td>Hand</td>
+<td>Deal damage [ 180% attack ], reduce 20 speed in 2 round to nearest vertical enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_82.png" alt="" /></td>
+<td>Sniper</td>
+<td>Hand</td>
+<td>Deal damage [ 50% attack ], poison [ 50% attack ] in 3 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_83.png" alt="" /></td>
+<td>Wrench</td>
+<td>Hand</td>
+<td>Deal damage [ 198% attack ] to 1 enemy with highest attack.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_84.png" alt="" /></td>
+<td>Spear</td>
+<td>Hand</td>
+<td>Deal damage [ 120% attack ], reduce 15% attack in 3 round to enemies in the back line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_85.png" alt="" /></td>
+<td>Hammer</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], reduce 30% armor in 3 round to 1 random enemy with highest amor.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_86.png" alt="" /></td>
+<td>Medic</td>
+<td>Hand</td>
+<td>Deal damage [ 198% attack ] to enemies in the front line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_87.png" alt="" /></td>
+<td>Sword</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Increase 10 speed in 3 round to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_88.png" alt="" /></td>
+<td>Golf Club</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Increase 10 energy to all allies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_89.png" alt="" /></td>
+<td>Hook</td>
+<td>Hand</td>
+<td>Deal damage [ 180% attack ] to enemies in the back line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_90.png" alt="" /></td>
+<td>Broomstick</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ], freeze enemy in 2 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_91.png" alt="" /></td>
+<td>Scythe</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Heal [ 150% attack ] to ally with the lowest hp.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_97.png" alt="" /></td>
+<td>Crab</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], reduce 50 speed in 3 round to 1 random enemy with highest speed.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_98.png" alt="" /></td>
+<td>No entry</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], fear ( reduce 50 energy at end of round) in 1 round to nearest vertical enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_99.png" alt="" /></td>
+<td>Brush</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ] to the closest enemies. Increase 35% block in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_100.png" alt="" /></td>
+<td>Hilt</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 20% block in 3 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_101.png" alt="" /></td>
+<td>Katana</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ] to the closest enemies. Heal [ 100% attack ] to allies in the front line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_102.png" alt="" /></td>
+<td>Pawn</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 10% armor in 3 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_103.png" alt="" /></td>
+<td>Guitar</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], reduce 20 energy to 1 enemy with highest energy.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_104.png" alt="" /></td>
+<td>Toilet</td>
+<td>Hand</td>
+<td>Deal damage [ 120% attack ], reduce 20% critical in 3 round to enemies in the back line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_105.png" alt="" /></td>
+<td>Stick</td>
+<td>Hand</td>
+<td>Deal damage [ 120% attack ], stun enemy in 1 round to enemies in the back line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_106.png" alt="" /></td>
+<td>Boxing</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ] to the closest enemies. Heal [ 38% attack ].</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_107.png" alt="" /></td>
+<td>Club</td>
+<td>Hand</td>
+<td>Deal damage [ 158% attack ], reduce 15% armor in 3 round to enemies in the front line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_108.png" alt="" /></td>
+<td>Lightsaber</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 20% armor in 3 round to the closest enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_109.png" alt="" /></td>
+<td>Ruyi</td>
+<td>Hand</td>
+<td>Deal damage [ 180% attack ] to nearest vertical enemies. Increase 20 speed in 2 round to 1 allies in the same line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_115.png" alt="" /></td>
+<td>Short Stick</td>
+<td>Hand</td>
+<td>Deal damage [ 200% attack ] to the closest enemies. Increase 25% armor in 3 round.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_116.png" alt="" /></td>
+<td>Turtle</td>
+<td>Hand</td>
+<td>Deal damage [ 150% attack ], reduce 40% accuracy in 3 round to 1 enemy with highest attack.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_117.png" alt="" /></td>
+<td>Dracula</td>
+<td>Hand</td>
+<td>Deal damage [ 158% attack ], stun enemy in 1 round to enemies in the front line.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_118.png" alt="" /></td>
+<td>Hive</td>
+<td>Hand</td>
+<td>Deal damage [ 110% attack ], reduce 10 speed in 3 round to all enemies.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_5.png" alt="" /></td>
+<td>Trident</td>
+<td>Tail</td>
+<td>Increase 50% critical.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_11.png" alt="" /></td>
+<td>Manx</td>
+<td>Tail</td>
+<td>Increase 71% accuracy.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_17.png" alt="" /></td>
+<td>Pixie</td>
+<td>Tail</td>
+<td>Increase 30% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_23.png" alt="" /></td>
+<td>Cymric</td>
+<td>Tail</td>
+<td>Increase 68% armor penetration.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_29.png" alt="" /></td>
+<td>Cloudy</td>
+<td>Tail</td>
+<td>Increase 49% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_35.png" alt="" /></td>
+<td>Aerial</td>
+<td>Tail</td>
+<td>Increase 85% damage skill.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_41.png" alt="" /></td>
+<td>Bullet</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 36% accuracy.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_47.png" alt="" /></td>
+<td>Leaf</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 25% critical.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_53.png" alt="" /></td>
+<td>Stumpy</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 18% critical damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_59.png" alt="" /></td>
+<td>T-rex</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 34% armor penetration.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_65.png" alt="" /></td>
+<td>Skeleton</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 15% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_96.png" alt="" /></td>
+<td>Jelly</td>
+<td>Tail</td>
+<td>Increase 43% damage skill, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_119.png" alt="" /></td>
+<td>Fish</td>
+<td>Tail</td>
+<td>Increase 36% accuracy, 25% critical.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_120.png" alt="" /></td>
+<td>Panther</td>
+<td>Tail</td>
+<td>Increase 36% accuracy, 18% critical damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_121.png" alt="" /></td>
+<td>Snake</td>
+<td>Tail</td>
+<td>Increase 36% accuracy, 34% armor penetration.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_122.png" alt="" /></td>
+<td>Roll</td>
+<td>Tail</td>
+<td>Increase 36% accuracy, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_123.png" alt="" /></td>
+<td>Horse</td>
+<td>Tail</td>
+<td>Increase 25% critical, 18% critical damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_124.png" alt="" /></td>
+<td>Roster</td>
+<td>Tail</td>
+<td>Increase 18% critical damage, 34% armor penetration.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_125.png" alt="" /></td>
+<td>Scorpion</td>
+<td>Tail</td>
+<td>Increase 18% critical damage, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_126.png" alt="" /></td>
+<td>Cheese</td>
+<td>Tail</td>
+<td>Increase 25% critical, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_127.png" alt="" /></td>
+<td>Maple</td>
+<td>Tail</td>
+<td>Increase 25% critical, 34% armor penetration.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_147.png" alt="" /></td>
+<td>Shark</td>
+<td>Tail</td>
+<td>Increase 34% armor penetration, 15% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_148.png" alt="" /></td>
+<td>Squirrel</td>
+<td>Tail</td>
+<td>Increase 34% armor penetration, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_149.png" alt="" /></td>
+<td>Pangolin</td>
+<td>Tail</td>
+<td>Increase 71% block.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_150.png" alt="" /></td>
+<td>Dino</td>
+<td>Tail</td>
+<td>Increase 30% damage reduction.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_151.png" alt="" /></td>
+<td>Racoon</td>
+<td>Tail</td>
+<td>Increase 30% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_152.png" alt="" /></td>
+<td>Flower</td>
+<td>Tail</td>
+<td>Increase 36% block, 15% damage reduction.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_153.png" alt="" /></td>
+<td>Bulb</td>
+<td>Tail</td>
+<td>Increase 15% immunity, 25% true damage.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_154.png" alt="" /></td>
+<td>Pine</td>
+<td>Tail</td>
+<td>Increase 36% block, 15% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_155.png" alt="" /></td>
+<td>Chilli</td>
+<td>Tail</td>
+<td>Increase 15% damage reduction, 15% immunity.</td>
+</tr>
+<tr>
+<td><img src="/whitepaper/static/skills/skill_174.png" alt="" /></td>
+<td>Bread</td>
+<td>Tail</td>
+<td>Increase 25% critical, 15% immunity.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results />
+            </div>
+
+            
+<nav class="flex mt-14">
+    <div class="w-1/2">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/whitepaper/gameplay/battling/effects/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+            <span>
+                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                <span class="block mt-1">Effects</span>
+            </span>
+        </a>
+    </div>
+
+    <div class="w-1/2">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/whitepaper/gameplay/arena/">
+            <span>
+                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                <span class="block mt-1">Arena</span>
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+        </a>
+    </div>
+</nav>
+
+
+        </main>
+
+        <div class="border-t dark:border-dark-650 pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between">
+    <div>
+        <ul class="flex flex-wrap items-center text-sm">
+</ul>
+
+    </div>
+    <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p>
+</div>
+</footer>
+
+        </div>
+    </div>
+    
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 transform translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:flex-shrink-0 lg:pt-6 lg:transform-none lg:w-56 lg:z-0 md:w-72 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+        </div>
+    </div>
+    
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
+
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+        <div id="docs-overlay-target"></div>
+
+        <script>window.__DOCS__ = { "title": "Skills", icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    </body>
+</html>
