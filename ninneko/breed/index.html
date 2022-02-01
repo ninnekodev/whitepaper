@@ -28,11 +28,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/whitepaper/static/coin_nino.svg" rel="icon" />
-    <link href="/whitepaper/resources/css/retype.css?v=1.11.2.696937496811" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/whitepaper/resources/css/retype.css?v=1.11.2.697043231458" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.11.2.696937496811" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.11.2.697043231458" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/whitepaper/resources/js/lunr.js?v=1.11.2.696937496811" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/whitepaper/resources/js/lunr.js?v=1.11.2.697043231458" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -199,6 +199,23 @@
     </h3>
 </doc-anchor-target>
 <p>You can randomly select two Ninneko to pair up with. Remember to understand the breeding mechanics before breeding a specific Ninneko.</p>
+<div class="flex mb-6">
+    <div class="flex-shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3">
+<p>Sibling Ninnekos cannot breed together, and Parents cannot breed with their offspring.</p>
+        </div>
+    </div>
+</div>
 <p>Ninnekos have a single class, which is the one from either parent. Thus, it has a 50% chance of inheriting one type or the other. Offspring can’t be born with classes different from its parents’, making class mutations impossible.</p>
 <p>If the parents are of the same class, their offspring will also be born with that class.</p>
 <p><figure class="content-center">
