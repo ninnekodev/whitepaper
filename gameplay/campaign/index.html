@@ -28,11 +28,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/whitepaper/static/coin_nino.svg" rel="icon" />
-    <link href="/whitepaper/resources/css/retype.css?v=1.11.2.698395851737" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/whitepaper/resources/css/retype.css?v=1.11.2.698481204574" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.11.2.698395851737" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.11.2.698481204574" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.11.2" defer data-turbo-track="reload"></script>
-    <script id="lunr-js" type="text/javascript" src="/whitepaper/resources/js/lunr.js?v=1.11.2.698395851737" defer></script>
+    <script id="lunr-js" type="text/javascript" src="/whitepaper/resources/js/lunr.js?v=1.11.2.698481204574" defer></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -200,29 +200,154 @@
 </figure>
 </p>
 <p>The higher your level is, the more MATA you can claim</p>
+<!-- ![Claim MATA](/static/art/claimmata.png) -->
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Level</th>
+<th>Min (MATA)</th>
+<th>Max (MATA)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-1</td>
+<td>4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>3-1</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5-1</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>7-1</td>
+<td>5</td>
+<td>5</td>
+</tr>
+<tr>
+<td>9-1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11-1</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>13-1</td>
+<td>6</td>
+<td>6</td>
+</tr>
+<tr>
+<td>15-1</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>17-1</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>19-1</td>
+<td>7</td>
+<td>7</td>
+</tr>
+<tr>
+<td>21-1</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>23-1</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>25-1</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>27-1</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>29-1</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>31-1</td>
+<td>9</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Choose cats to claim MATA, claiming costs cats&#x27; stamina</p>
 <p><figure class="content-center">
-    <img src="/whitepaper/static/art/claimmata.png" alt="Claim MATA" />
-    <figcaption class="caption">Claim MATA</figcaption>
+    <img src="/whitepaper/static/art/choosecat.png" alt="Choose cats" />
+    <figcaption class="caption">Choose cats</figcaption>
 </figure>
 </p>
-<p>You can use 2500 stamina each day to claim MATA, which is reset at 17h UTC everyday.</p>
-<p><figure class="content-center">
-    <img src="/whitepaper/static/art/stamina.png" alt="Stamina" />
-    <figcaption class="caption">Stamina</figcaption>
-</figure>
-</p>
+<p>The stamina limit used for claiming MATA in PVE depends on the number of adult cats you have (not counting cats that are locked). The energy limit is calculated only once at 00:00 every day (UTC+7)</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Ninnekos</th>
+<th>Stamina</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>2500</td>
+</tr>
+<tr>
+<td>6</td>
+<td>2160</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1800</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1440</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1080</td>
+</tr>
+<tr>
+<td>2</td>
+<td>720</td>
+</tr>
+<tr>
+<td>1</td>
+<td>320</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ![Stamina](/static/art/stamina.png) -->
 <p>The system will determine the cat’s faction to be rewarded when claiming MATA.</p>
 <p>Use cats with the same bonus faction to receive more MATA.</p>
 <p>When claiming MATA, you will have the chance to receive artifact shards.</p>
 <p><figure class="content-center">
     <img src="/whitepaper/static/art/bonusmata.png" alt="Bonus MATA" />
     <figcaption class="caption">Bonus MATA</figcaption>
-</figure>
-</p>
-<p>Choose cats to claim MATA</p>
-<p><figure class="content-center">
-    <img src="/whitepaper/static/art/choosecat.png" alt="Choose cats" />
-    <figcaption class="caption">Choose cats</figcaption>
 </figure>
 </p>
 
