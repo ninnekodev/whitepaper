@@ -28,9 +28,9 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/whitepaper/static/coin_nino.svg" rel="icon" />
-    <link href="/whitepaper/resources/css/retype.css?v=1.10.707383671711" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/whitepaper/resources/css/retype.css?v=1.10.707392559209" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.10.707383671711" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/whitepaper/resources/js/config.js?v=1.10.707392559209" defer data-turbo-track="reload"></script>
     <script type="text/javascript" src="/whitepaper/resources/js/retype.js?v=1.10" defer data-turbo-track="reload"></script>
 </head>
     <body>
@@ -236,21 +236,16 @@
 <li><p>Skip the match will still deduct 10 Arena points each time.</p>
 </li>
 </ul>
-<doc-anchor-target id="deduct-more-arena-points-when-the-defense-loses-consecutively">
+<doc-anchor-target id="reduces-mata-when-losing-in-defense">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#deduct-more-arena-points-when-the-defense-loses-consecutively">#</doc-anchor-trigger>
-        <span>Deduct more Arena points when the defense loses consecutively:</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#reduces-mata-when-losing-in-defense">#</doc-anchor-trigger>
+        <span>Reduces MATA when losing in defense</span>
     </h4>
 </doc-anchor-target>
 <ul>
-<li><p>Lose 3 matches in a row: deduct 4 more points for each loss</p>
-</li>
-<li><p>Lose 4 matches in a row: deduct 5 more points for each loss</p>
-</li>
-<li><p>Lose 5 matches in a row: deduct 7 more points for each loss</p>
-</li>
-<li><p>Loss of 6 consecutive matches or more: 9 points will be deducted for each loss</p>
-</li>
+<li>When your defense formation loses: deduct 25% of the MATA winning reward at the corresponding rank of the attacker (in-game MATA)</li>
+<li>If your in-game account doesn’t have enough MATA to deduct (0 MATA for example), you won’t lose MATA.</li>
+<li>Protection mechanism for new players: New players will have 14 days without losing Mata in defense mode.</li>
 </ul>
 
 
