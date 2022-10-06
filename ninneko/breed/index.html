@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/whitepaper">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.718196288837">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.718361366204">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../static/coin_nino.svg" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.718196288837" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=2.4.0.718361366204" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.718196288837" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.718361366204" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.718196288837" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.718361366204" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -267,7 +267,20 @@
 </tbody>
 </table>
 </div>
-<p>By breaking down a Ninneko’s genetic code, it’s possible to predict the probabilities when breeding 2 Ninneko using  <a href="https://ninneko.zone/">Breeding Simulator</a></p>
+<!-- The breeding algorithm basically works like this: -->
+<!-- By breaking down a Ninneko’s genetic code, it’s possible to predict the probabilities when breeding 2 Ninneko using  [Breeding Simulator](https://ninneko.zone/) -->
+<doc-anchor-target id="gene-selection-process">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#gene-selection-process">#</doc-anchor-trigger>
+        <span>Gene selection process:</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li><p>For each cattribute, 3 genes (P, H1, H2) of the baby Ninneko are randomly selected from 6 genes of its parents, based on the probalities above</p>
+</li>
+<li><p>If the selected P gene is WILD, 99% chance it will be replaced by a Normal Gene (selected from parents&#x27;)</p>
+</li>
+</ul>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -287,7 +300,6 @@
         </div>
     </div>
 </div>
-<p>The breeding algorithm is in Smart Contract <a href="https://bscscan.com/address/0xDfE8f54B894793BFbD2591033e7A307ED28A8d40">NFT</a>. You can check the source code to understand how breeding works and how low the chance of getting WILD gene is</p>
 <hr />
 <doc-anchor-target id="mutation">
     <h3>
