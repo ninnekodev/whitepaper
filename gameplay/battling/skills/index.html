@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/whitepaper">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.726576121997">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.726921880021">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -34,11 +34,11 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/whitepaper/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../../static/coin_nino.svg" rel="icon" />
-    <link href="../../../resources/css/retype.css?v=2.4.0.726576121997" rel="stylesheet" />
+    <link href="../../../resources/css/retype.css?v=2.4.0.726921880021" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.726576121997" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../../resources/js/config.js?v=2.4.0.726921880021" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="../../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.726576121997" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../../resources/js/lunr.js?v=2.4.0.726921880021" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -259,13 +259,13 @@
 <td><img src="../../../static/skills/skill_62.png" alt="" /></td>
 <td>Shutter</td>
 <td>Eye</td>
-<td>When hp &lt; 50%, heal [ 5% max health ] in 5 round.</td>
+<td>When hp &lt; 50%, heal [ 30% max health ] in 5 round.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_93.png" alt="" /></td>
 <td>Paint</td>
 <td>Eye</td>
-<td>When hp &lt; 30%, increase healing efficiency 50% in 2 round.</td>
+<td>When HP &lt; 50%, deals 75% poison damage to all enemies for 2 rounds.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_189.png" alt="" /></td>
@@ -301,7 +301,7 @@
 <td><img src="../../../static/skills/skill_194.png" alt="" /></td>
 <td>Blind</td>
 <td>Eye</td>
-<td>When battle starts, increase 10% armor in 2 round to 1 allies in the same line.</td>
+<td>when battle starts, stun the front line enemy for 1 round.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_195.png" alt="" /></td>
@@ -325,7 +325,7 @@
 <td><img src="../../../static/skills/skill_198.png" alt="" /></td>
 <td>Scar</td>
 <td>Eye</td>
-<td>Increase damage [ 30% attack to petrified enemies ] to enemies.</td>
+<td>When HP&lt; 50%, has a 50% chance to petrify all enemies for 2 round.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_199.png" alt="" /></td>
@@ -349,7 +349,7 @@
 <td><img src="../../../static/skills/skill_202.png" alt="" /></td>
 <td>Player</td>
 <td>Eye</td>
-<td>When allies use active skill, increase 10 energy .</td>
+<td>When start rounds increase attack by 10%. (Resonance for 15 rounds max 150%)</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_203.png" alt="" /></td>
@@ -451,7 +451,7 @@
 <td><img src="../../../static/skills/skill_75.png" alt="" /></td>
 <td>Pirate</td>
 <td>Hair</td>
-<td>When taking damage, deal damage [ 50% attack ] to attacker.</td>
+<td>When taking damage, deal damage [ 80% attack ] to attacker.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_79.png" alt="" /></td>
@@ -463,7 +463,7 @@
 <td><img src="../../../static/skills/skill_95.png" alt="" /></td>
 <td>Goat</td>
 <td>Hair</td>
-<td>When taking damage, heal [ 12% attack ].</td>
+<td>When taking damage, heal [ 40% attack ].</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_156.png" alt="" /></td>
@@ -493,7 +493,7 @@
 <td><img src="../../../static/skills/skill_160.png" alt="" /></td>
 <td>Hippie</td>
 <td>Hair</td>
-<td>When taking damage, reduce 5 energy to attacker.</td>
+<td>When taking damage, reduce 25 energy  to attacker.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_161.png" alt="" /></td>
@@ -511,7 +511,7 @@
 <td><img src="../../../static/skills/skill_163.png" alt="" /></td>
 <td>Guan Yu</td>
 <td>Hair</td>
-<td>Whenever suffers a critical strike, heal [ 12% attack ].</td>
+<td>Whenever suffers a critical strike, increase 5% crit and 10% crit dame for 2 rounds.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_164.png" alt="" /></td>
@@ -535,7 +535,7 @@
 <td><img src="../../../static/skills/skill_167.png" alt="" /></td>
 <td>Snorkel</td>
 <td>Hair</td>
-<td>When your attack is blocked, increase 10% true damage in 2 round.</td>
+<td>When allies use active skills, increase 10% true damage in 2 round.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_168.png" alt="" /></td>
@@ -613,19 +613,19 @@
 <td><img src="../../../static/skills/skill_106.png" alt="" /></td>
 <td>Boxing</td>
 <td>Hand</td>
-<td>Deal damage [ 200% attack ] to the closest enemies. Heal [ 38% attack ].</td>
+<td>Deal damage [ 350% attack ] to the closest enemy. Heal [ 150% attack ].</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_107.png" alt="" /></td>
 <td>Club</td>
 <td>Hand</td>
-<td>Deal damage [ 158% attack ], reduce 15% armor in 3 round to enemies in the front line.</td>
+<td>Deal damage [ 220% attack ], reduce 20% armor in 3 round to enemies in the front line.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_108.png" alt="" /></td>
 <td>Lightsaber</td>
 <td>Hand</td>
-<td>Deal damage [ 110% attack ], reduce 20% armor in 3 round to the closest enemies.</td>
+<td>Deal damage [ 350% attack ], reduce 40% armor in 3 round to the closest enemy.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_109.png" alt="" /></td>
@@ -643,7 +643,7 @@
 <td><img src="../../../static/skills/skill_116.png" alt="" /></td>
 <td>Turtle</td>
 <td>Hand</td>
-<td>Deal damage [ 150% attack ], reduce 40% accuracy in 3 round to 1 enemy with highest attack.</td>
+<td>Deal damage [ 350% attack ], reduce 40% attack in 3 round to 1 enemies with highest attack.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_117.png" alt="" /></td>
@@ -697,7 +697,7 @@
 <td><img src="../../../static/skills/skill_48.png" alt="" /></td>
 <td>Twin</td>
 <td>Hand</td>
-<td>Deal damage [ 150% attack ] to 2 enemy with highest attack.</td>
+<td>Deal damage [ 220% attack ] to 2 enemies with highest attack.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_54.png" alt="" /></td>
@@ -757,7 +757,7 @@
 <td><img src="../../../static/skills/skill_72.png" alt="" /></td>
 <td>Rugby Ball</td>
 <td>Hand</td>
-<td>Deal damage [ 180% attack ], reduce 20 energy to nearest vertical enemies.</td>
+<td>Deal damage [ 220% attack ], reduce 60 energy  to nearest vertical enemies.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_73.png" alt="" /></td>
@@ -781,7 +781,7 @@
 <td><img src="../../../static/skills/skill_77.png" alt="" /></td>
 <td>AK47</td>
 <td>Hand</td>
-<td>Deal damage [ 110% attack ] to the closest enemies. Increase 10% armor in 3 round to all allies.</td>
+<td>Deal damage [ 350% attack ] to the closest enemy. Increase 20% immunity in 3 round to all allies.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_78.png" alt="" /></td>
@@ -793,7 +793,7 @@
 <td><img src="../../../static/skills/skill_80.png" alt="" /></td>
 <td>Bow</td>
 <td>Hand</td>
-<td>Deal damage [ 150% attack ], petrify enemy in 1 round to nearest vertical enemies.</td>
+<td>Deal damage [ 180% attack ], petrify enemy in 2 round to nearest vertical enemies.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_81.png" alt="" /></td>
@@ -829,7 +829,7 @@
 <td><img src="../../../static/skills/skill_86.png" alt="" /></td>
 <td>Medic</td>
 <td>Hand</td>
-<td>Deal damage [ 198% attack ] to enemies in the front line.</td>
+<td>Deal damage [ 270% attack ] to enemies in the front line.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_87.png" alt="" /></td>
@@ -841,7 +841,7 @@
 <td><img src="../../../static/skills/skill_88.png" alt="" /></td>
 <td>Golf Club</td>
 <td>Hand</td>
-<td>Deal damage [ 110% attack ] to the closest enemies. Increase 10 energy to all allies.</td>
+<td>Deal damage [ 110% attack ] to the closest enemy. Increase 25 energy  to all allies.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_89.png" alt="" /></td>
@@ -853,7 +853,7 @@
 <td><img src="../../../static/skills/skill_90.png" alt="" /></td>
 <td>Broomstick</td>
 <td>Hand</td>
-<td>Deal damage [ 200% attack ], freeze enemy in 2 round to the closest enemies.</td>
+<td>Deal damage [ 300% attack ], freeze enemy in 2 round to the closest enemy.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_91.png" alt="" /></td>
@@ -1243,7 +1243,7 @@
 <td><img src="../../../static/skills/skill_65.png" alt="" /></td>
 <td>Skeleton</td>
 <td>Tail</td>
-<td>Increase 43% damage skill, 15% immunity.</td>
+<td>Increase 90% damage skill , 30% crit.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_96.png" alt="" /></td>
@@ -1303,13 +1303,13 @@
 <td><img src="../../../static/skills/skill_127.png" alt="" /></td>
 <td>Maple</td>
 <td>Tail</td>
-<td>Increase 25% critical, 34% armor penetration.</td>
+<td>Increase 40% critical, 60% armor penetration.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_147.png" alt="" /></td>
 <td>Bluefin</td>
 <td>Tail</td>
-<td>Increase 34% armor penetration, 15% immunity.</td>
+<td>Increase 60% armor penetration, 30% immunity.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_148.png" alt="" /></td>
@@ -1327,13 +1327,13 @@
 <td><img src="../../../static/skills/skill_150.png" alt="" /></td>
 <td>Dino</td>
 <td>Tail</td>
-<td>Increase 30% damage reduction.</td>
+<td>Increase 30% damage reduction,30% immunity.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_151.png" alt="" /></td>
 <td>Racoon</td>
 <td>Tail</td>
-<td>Increase 30% immunity.</td>
+<td>Increase 70% immunity.</td>
 </tr>
 <tr>
 <td><img src="../../../static/skills/skill_152.png" alt="" /></td>
